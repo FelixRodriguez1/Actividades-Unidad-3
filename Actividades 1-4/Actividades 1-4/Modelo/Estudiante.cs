@@ -15,7 +15,7 @@ namespace Actividades_1_4.Modelo
 
         public void Estudiar(string texto)
         {
-            //Método para estudiar
+            //Método para estudiark
         }//Fin del metodo estudiar
         public void hacerTarea(string texto)
         {
