@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Actividades_1_4.Vista;
 
 namespace Actividades_1_4
 {
@@ -15,6 +16,32 @@ namespace Actividades_1_4
         public FormaHelloWorld()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEstudiantes_Click(object sender, EventArgs e)
+        {
+            FormaEstudiante forma = new FormaEstudiante();
+            forma.Show();
+            this.Hide();//esconder la forma
+        }
+
+        private void buttonCarrera_Click(object sender, EventArgs e)
+        {
+            FormaCarrera forma = new FormaCarrera();
+            forma.Show();
+            this.Hide();
+        }
+
+        private void buttonFacilitador_Click(object sender, EventArgs e)
+        {
+            FormaFacilitador forma = new FormaFacilitador();
+            forma.Show();
+            this.Hide();
         }
     }
 }

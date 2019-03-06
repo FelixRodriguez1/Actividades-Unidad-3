@@ -46,7 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\Carrera.cs" />
     <Compile Include="Modelo\Estudiante.cs" />
+    <Compile Include="Modelo\Facilitador.cs" />
+    <Compile Include="Vista\FormaCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormaCarrera.Designer.cs">
+      <DependentUpon>FormaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormaEstudiante.Designer.cs">
+      <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormaFacilitador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormaFacilitador.Designer.cs">
+      <DependentUpon>FormaFacilitador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\FormaHelloWorld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +84,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\FormaEstudiante.resx">
+      <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\FormaHelloWorld.resx">
       <DependentUpon>FormaHelloWorld.cs</DependentUpon>
     </EmbeddedResource>

@@ -8,18 +8,26 @@ namespace Actividades_1_4.Modelo
 {
     class Estudiante
     {
-        public byte Edad { get; set; }
-        public string Genero { get; set; }
-        public string Nombre { get; set; }
-        public int numeroControl { get; set; } 
+        //Propiedades de la clase
+        public byte edad;
+        public char genero;
+        public string nombre;
+        public long numeroControl;
 
+        //Métodos getter y setter de las propiedades
+        public byte Edad { get; set; }
+        public char Genero { get; set; }
+        public string Nombre { get; set; }
+        public long NumeroControl { get; set; } 
+
+        //
         public void Estudiar(string texto)
         {
-            //Método para estudiark
+            return;//Método para estudiark
         }//Fin del metodo estudiar
         public void hacerTarea(string texto)
         {
-            //Método para estudiar
+            return;//Método para estudiar
         }//Fin del metodo hacer tarea
     }
 }
