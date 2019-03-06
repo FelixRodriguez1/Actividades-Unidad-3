@@ -11,7 +11,7 @@ namespace Actividades_1_4.Modelo
         //Propiedades de la clase
         public string nombre;
         public string duracion;
-        public string escripcion;
+        public string descripcion;
 
         //Métodos getter y setter de las propiedades
         public string Nombre { get; set;}
