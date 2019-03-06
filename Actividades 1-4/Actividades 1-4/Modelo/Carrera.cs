@@ -9,7 +9,9 @@ namespace Actividades_1_4.Modelo
     class Carrera
     {
         //Propiedades de la clase
-        public string nombre, duracion, descripcion;
+        public string nombre;
+        public string duracion;
+        public string escripcion;
 
         //Métodos getter y setter de las propiedades
         public string Nombre { get; set;}
