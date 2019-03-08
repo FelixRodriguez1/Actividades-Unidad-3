@@ -9,13 +9,15 @@ namespace Actividades_1_4.Modelo.Campeonato
     class Jugador : Persona
     {
         //Atributos de la clase
-        private Equipo _equipo;
         private int numero;
         private string _posicion;
+
+        //Enlace con la clase Equipo
+        private Equipo _equipe;
 
         //Métodos getter y setter
         public int Numero { get; set; }
         public string Posicion { get; set; }
-        public Equipo Equipo { get; set; }
+        public Equipo Equipe { get; set; }
     }
 }
