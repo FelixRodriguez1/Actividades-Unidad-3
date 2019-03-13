@@ -54,6 +54,18 @@
     <Compile Include="Modelo\Carrera.cs" />
     <Compile Include="Modelo\Estudiante.cs" />
     <Compile Include="Modelo\Facilitador.cs" />
+    <Compile Include="Vista\Campeonato\Campeonato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Campeonato\Campeonato.Designer.cs">
+      <DependentUpon>Campeonato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Campeonato\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Campeonato\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\FormaCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\Campeonato\Campeonato.resx">
+      <DependentUpon>Campeonato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Campeonato\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\FormaEstudiante.resx">
       <DependentUpon>FormaEstudiante.cs</DependentUpon>
     </EmbeddedResource>
