@@ -18,26 +18,6 @@ namespace CinemaDoloresHidalgo.Modelo
         }
 
         public int NumeroEmpleado { get; set; }
-        /*{
-            get
-            {
-                return _numeroEmpleado;
-            }
-            set
-            {
-                _numeroEmpleado = value;
-            }
-        }*/
         public string TipoEmpleado { get; set; }
-        /*{
-            get
-            {
-                return _tipoEmpleado;
-            }
-            set
-            {
-                _tipoEmpleado = value;
-            }
-        }*/
     }
 }

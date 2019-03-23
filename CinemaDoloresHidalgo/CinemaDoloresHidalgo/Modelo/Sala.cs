@@ -8,6 +8,7 @@ namespace CinemaDoloresHidalgo.Modelo
 {
     class Sala
     {
+        //Propiedades de la clase
         private int _id;
         private string _nombre;
         private int _capacidad;
@@ -16,6 +17,7 @@ namespace CinemaDoloresHidalgo.Modelo
         //Una sala contiene 200 asientos
         private Asiento[] asientos = new Asiento[200];
 
+        //Constructor
         public Sala()
         {
             _nombre = "A";
@@ -30,6 +32,7 @@ namespace CinemaDoloresHidalgo.Modelo
             _nombre = name;
         }
 
+        // metodos getter y setter
         public int Id
         {
             get

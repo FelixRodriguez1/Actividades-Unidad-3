@@ -8,17 +8,20 @@ namespace CinemaDoloresHidalgo.Modelo
 {
     class Pelicula
     {
+        //Propiedades de la clase
         private int _id;
         private string _nombre;
         private string _director;
         private string _clasificacion;
         private string _resumen;
 
+        //Constructor
         public Pelicula()
         {
             _clasificacion = "A";
         }
 
+        //Metodos getter y setter
         public int Id {
             get
             {

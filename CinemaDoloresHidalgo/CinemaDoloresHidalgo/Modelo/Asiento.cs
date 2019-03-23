@@ -8,9 +8,11 @@ namespace CinemaDoloresHidalgo.Modelo
 {
     class Asiento
     {
+        //Propiedades de la clase
         private int _numero;
         private bool _estaDisponible;
 
+        //constructor
         public Asiento()
         {
             _numero = 1;
@@ -27,7 +29,8 @@ namespace CinemaDoloresHidalgo.Modelo
          * a1.Numero = 1;
          * a1.EstaDisponible;
          * */
-        public bool Disponibilidad { get; set; }
+         //Metodos getter y setter
+        public bool EstaDisponible { get; set; }
         public int Numero { get; set; }
     }
 }
