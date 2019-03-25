@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelo\Campeonato\Arbitro.cs" />
+    <Compile Include="Modelo\Campeonato\Campeonato.cs" />
     <Compile Include="Modelo\Campeonato\Cancha.cs" />
     <Compile Include="Modelo\Campeonato\Equipo.cs" />
+    <Compile Include="Modelo\Campeonato\Jornada.cs" />
     <Compile Include="Modelo\Campeonato\Jugador.cs" />
     <Compile Include="Modelo\Campeonato\Persona.cs" />
     <Compile Include="Modelo\Carrera.cs" />
@@ -59,6 +61,12 @@
     </Compile>
     <Compile Include="Vista\Campeonato\Campeonato.Designer.cs">
       <DependentUpon>Campeonato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Campeonato\Jornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Campeonato\Jornada.Designer.cs">
+      <DependentUpon>Jornada.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Campeonato\Main.cs">
       <SubType>Form</SubType>
@@ -103,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\Campeonato\Campeonato.resx">
       <DependentUpon>Campeonato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Campeonato\Jornada.resx">
+      <DependentUpon>Jornada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Campeonato\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
