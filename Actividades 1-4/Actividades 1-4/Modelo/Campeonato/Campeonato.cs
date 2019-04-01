@@ -30,5 +30,10 @@ namespace Actividades_1_4.Modelo.Campeonato
         public DateTime FechaInicio { get; set; }
         public DateTime FechaTermino { get; set; }
         public List<Jornada> Jor { get; set; }
+
+        public override string ToString()
+        {
+            return _id + "|" + _nombre + "|" + _fechaInicio.ToString ("dd/MM/yyyy") + "|" + _fechaTermino.ToString("dd/MM/yyyy");
+        }
     }
 }

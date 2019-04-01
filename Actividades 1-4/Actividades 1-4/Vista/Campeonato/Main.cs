@@ -20,16 +20,15 @@ namespace Actividades_1_4.Vista.Campeonato
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Jornada c = new Jornada();
-            c.Show();
-            this.Hide();
+            //invocar Jornada
+            Program.formaJornada.Show();
+            Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Campeonato forma = new Campeonato();
-            forma.Show();
-            this.Hide();
+            Program.formaCampeonato.Show();
+            Hide();
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)

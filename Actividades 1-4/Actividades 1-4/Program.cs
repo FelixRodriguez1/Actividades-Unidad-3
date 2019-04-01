@@ -9,6 +9,9 @@ namespace Actividades_1_4
 {
     static class Program
     {
+        public static Main formaPrincipal = null;
+        public static Jornada formaJornada = null;
+        public static Campeonato formaCampeonato = null;
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -17,7 +20,10 @@ namespace Actividades_1_4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            formaPrincipal = new Main();
+            formaJornada = new Jornada();
+            formaCampeonato = new Campeonato();
+            Application.Run(formaPrincipal);
         }
     }
 }
