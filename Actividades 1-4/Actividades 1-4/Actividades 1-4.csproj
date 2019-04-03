@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelo\Campeonato\Arbitro.cs" />
-    <Compile Include="Modelo\Campeonato\Campeonato.cs" />
+    <Compile Include="Modelo\Campeonato\claseCampeonato.cs" />
     <Compile Include="Modelo\Campeonato\Cancha.cs" />
     <Compile Include="Modelo\Campeonato\Equipo.cs" />
     <Compile Include="Modelo\Campeonato\Jornada.cs" />
