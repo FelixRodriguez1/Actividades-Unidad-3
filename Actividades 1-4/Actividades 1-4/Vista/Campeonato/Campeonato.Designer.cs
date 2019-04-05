@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Campeonato));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,6 +55,9 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonJornadas = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuEliminar = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuModificar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -65,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -101,7 +106,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.0597F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.9403F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
@@ -188,7 +193,7 @@
             this.flowLayoutPanel1.Controls.Add(this.dateFin);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(62, 56);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(391, 22);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(390, 22);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // label7
@@ -238,7 +243,7 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(459, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(458, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -249,7 +254,7 @@
             // 
             this.pictureAdd.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureAdd.Image = ((System.Drawing.Image)(resources.GetObject("pictureAdd.Image")));
-            this.pictureAdd.Location = new System.Drawing.Point(459, 31);
+            this.pictureAdd.Location = new System.Drawing.Point(458, 31);
             this.pictureAdd.Name = "pictureAdd";
             this.pictureAdd.Size = new System.Drawing.Size(33, 19);
             this.pictureAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -268,7 +273,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(62, 109);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(391, 188);
+            this.dataGridView1.Size = new System.Drawing.Size(390, 188);
             this.dataGridView1.TabIndex = 9;
             // 
             // textId
@@ -316,9 +321,9 @@
             this.flowLayoutPanel2.Controls.Add(this.buttonJornadas);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(459, 214);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(458, 214);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(95, 83);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(96, 83);
             this.flowLayoutPanel2.TabIndex = 14;
             // 
             // buttonJornadas
@@ -344,6 +349,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuEliminar,
+            this.menuModificar});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip1_ItemClicked);
+            // 
+            // menuEliminar
+            // 
+            this.menuEliminar.Name = "menuEliminar";
+            this.menuEliminar.Size = new System.Drawing.Size(152, 22);
+            this.menuEliminar.Text = "Eliminar";
+            // 
+            // menuModificar
+            // 
+            this.menuModificar.Name = "menuModificar";
+            this.menuModificar.Size = new System.Drawing.Size(152, 22);
+            this.menuModificar.Text = "Modificar";
+            // 
             // Campeonato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +393,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -399,5 +426,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaInicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaTermino;
         private System.Windows.Forms.DataGridViewTextBoxColumn textNombre;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuEliminar;
+        private System.Windows.Forms.ToolStripMenuItem menuModificar;
     }
 }
