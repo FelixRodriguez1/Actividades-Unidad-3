@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Modelo\Articulo.cs" />
     <Compile Include="Modelo\Cliente.cs" />
+    <Compile Include="Modelo\InfoFabrica.cs" />
     <Compile Include="Modelo\Pedido.cs" />
     <Compile Include="Vista\Form1.cs">
       <SubType>Form</SubType>
