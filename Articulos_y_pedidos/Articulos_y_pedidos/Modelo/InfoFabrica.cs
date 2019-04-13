@@ -10,8 +10,53 @@ namespace Articulos_y_pedidos.Modelo
     {
         private int _idFacrica;
         private string _telefonoCont;
+        private List<Articulo> _listaArt;
+        private string _infoCompe;
 
-        public int IdFabrica { get; set; }
-        public string TelefonoCont { get; set; }
+        public InfoFabrica(int fabrica, string telefono, string competencia)
+        {
+            _listaArt = new List<Articulo>();
+            _idFacrica = fabrica;
+            _telefonoCont = telefono;
+            _infoCompe = competencia;
+        }
+
+        public int IdFacrica
+        {
+            get
+            {
+                return _idFacrica;
+            }
+
+            set
+            {
+                _idFacrica = value;
+            }
+        }
+        public string TelefonoCont
+        {
+            get
+            {
+                return _telefonoCont;
+            }
+
+            set
+            {
+                _telefonoCont = value;
+            }
+        }
+
+        public string InfoCompe
+        {
+            get
+            {
+                return _infoCompe;
+            }
+
+            set
+            {
+                _infoCompe = value;
+            }
+        }
     }
 }

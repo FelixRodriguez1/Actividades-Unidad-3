@@ -13,10 +13,46 @@ namespace Articulos_y_pedidos.Modelo
         private int _existencia;
         private string _descripcion;
 
-        public int NumArt { get; set; }
-        public string Fabrica { get; set; }
-        public int Existencia { get; set; }
-        public string Descripcion { get; set; }
+        public int NumArt {
+            get
+            {
+                return _numArt;
+            }
+            set
+            {
+                _numArt = value;
+            }
+        }
+        public string Fabrica {
+            get
+            {
+                return _fabrica;
+            }
+            set
+            {
+                _fabrica = value;
+            }
+        }
+        public int Existencia {
+            get
+            {
+                return _existencia;
+            }
+            set
+            {
+                _existencia = value;
+            }
+        }
+        public string Descripcion {
+            get
+            {
+                return _descripcion;
+            }
+            set
+            {
+                _descripcion = value;
+            }
+        }
 
     }
 }
